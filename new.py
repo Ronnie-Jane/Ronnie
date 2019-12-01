@@ -21,3 +21,10 @@ def divide(a, b):
         return a/b
     except:
         raise TypeError
+
+def power(a, b):
+    assert type(b) is int
+    if b == 1:
+        return a
+    else:
+        return a*power(a, b-1)
