@@ -9,3 +9,9 @@ def multiply(a, b):
         return a*b
     except:
         raise TypeError
+
+ def sub(a, b):
+    try:
+        return a-b
+    except:
+        raise TypeError
