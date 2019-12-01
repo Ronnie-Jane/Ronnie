@@ -21,3 +21,10 @@ def divide(a, b):
         return a/b
     except:
         raise TypeError
+
+def factorial(a):
+    assert type(a) is int
+    if a == 1:
+        return a
+    else:
+        return a*factorial(a-1)
