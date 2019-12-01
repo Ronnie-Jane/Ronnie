@@ -24,7 +24,10 @@ def divide(a, b):
 
 def power(a, b):
     assert type(b) is int
-    if b == 1:
+    assert b>0
+    if b == 0:
+        return 1
+    elif b == 1:
         return a
     else:
         return a*power(a, b-1)
