@@ -28,3 +28,10 @@ def power(a, b):
         return a
     else:
         return a*power(a, b-1)
+        
+def factorial(a):
+    assert type(a) is int
+    if a == 1:
+        return a
+    else:
+        return a*factorial(a-1)
