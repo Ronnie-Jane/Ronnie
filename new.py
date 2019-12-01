@@ -31,7 +31,8 @@ def power(a, b):
         
 def factorial(a):
     assert type(a) is int
-    if a == 1:
+    assert a>=0:
+    if a == 1 or a == 0:
         return a
     else:
         return a*factorial(a-1)
